@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rpsStyle.css" />
+    <title>Rock, Paper, Scissors!</title>
+  </head>
+  <body>
+    <header>
+      <h1>ROCK, PAPER, SCISSORS!</h1>
+    </header>
+    <section id="gameInputBox">
+      <div class="gameInput">
+        <h2>Enter Player Name</h2>
+        <form id="playerNameForm">
+          <label for="playerName">Player Name:</label>
+          <input type="text" id="registerName" name="registerName" required />
+          <button type="submit" id="registerPlayerButton">
+            Register Player!
+          </button>
+        </form>
+      </div>
+      <div id="cards">
+        <img id="playerOneCard" src="hands/rock.png" alt="picture of hand throwing rock">
+        <img id="playerTwoCard" src="hands/rock.png" alt="picture of hand throwing rock">
+      </div>
+      <div class="gameInput">
+        <h2>Play Until?</h2>
+        <form id="numberRoundsForm">
+          <label for="roundNumber">Rounds to Win:</label>
+          <input
+            type="number"
+            id="roundsToWin"
+            name="roundsToWin"
+            min="1"
+            max="7"
+            required
+          />
+          <button type="submit" id="roundsButton">Submit</button>
+        </form>
+        <p>If no value is entered it will be best 2 out of 3</p>
+      </div>
+    </section>
+    <section id="playerBoxes">
+      <div class="playerBox">
+        <h2 id="pOne">Player</h2>
+        <p id="pOneScore">0</p>
+      </div>
+      <div class="playerBox">
+        <h2 id="pTwo">Earl</h2>
+        <p id="pTwoScore">0</p>
+      </div>
+    </section>
+    <!-- <div>
+        <h1 id="pThree">Jones</h1>
+        <p id="pThreeScore">0</p>
+      </div>
+      <div>
+        <h1 id="pFour">Mufasa</h1>
+        <p id="pFourScore">0</p>
+      </div> -->
+
+    <button id="throwHandsButton">Go!</button>
+    <div id="game"></div>
+    <div id="matchResult"></div>
+    <script src="rpsScript.js"></script>
+  </body>
+</html>
