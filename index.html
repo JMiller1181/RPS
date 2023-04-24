@@ -12,7 +12,7 @@
       <h1>ROCK, PAPER, SCISSORS!</h1>
     </header>
     <section id="gameInputBox">
-      <div class="gameInput">
+      <div class="gameInput" id="nameInput">
         <h2>Enter Player Name</h2>
         <form id="playerNameForm">
           <label for="playerName">Player Name:</label>
@@ -22,11 +22,8 @@
           </button>
         </form>
       </div>
-      <div id="cards">
-        <img id="playerOneCard" src="hands/rock.png" alt="picture of hand throwing rock">
-        <img id="playerTwoCard" src="hands/rock.png" alt="picture of hand throwing rock">
-      </div>
-      <div class="gameInput">
+      <div id="roundsDisplay"></div>
+      <div class="gameInput" id="roundInput">
         <h2>Play Until?</h2>
         <form id="numberRoundsForm">
           <label for="roundNumber">Rounds to Win:</label>
@@ -47,6 +44,18 @@
       <div class="playerBox">
         <h2 id="pOne">Player</h2>
         <p id="pOneScore">0</p>
+      </div>
+      <div id="cards">
+        <img
+          id="playerOneCard"
+          src="hands/rock.png"
+          alt="picture of hand throwing rock"
+        />
+        <img
+          id="playerTwoCard"
+          src="hands/rock.png"
+          alt="picture of hand throwing rock"
+        />
       </div>
       <div class="playerBox">
         <h2 id="pTwo">Earl</h2>
