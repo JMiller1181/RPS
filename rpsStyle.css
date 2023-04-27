@@ -21,7 +21,8 @@ header {
 }
 #game {
     display: flex;
-    justify-content: space-evenly; 
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;}
 #cards {
     display: flex; 
@@ -29,9 +30,9 @@ header {
 }
 img {
     width: 20%; 
-    height: auto; 
+    height: auto;
     border: 3px solid blue; 
-    border-radius: 1rem;
+    border-radius: 4rem;
 }
 #matchResult {
     align-self: center;

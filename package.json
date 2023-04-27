@@ -1,0 +1,23 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "description": "Rock Paper Scissors App",
+  "main": "rpsScript.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMiller1181/RPS.git"
+  },
+  "author": "Jaco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMiller1181/RPS/issues"
+  },
+  "homepage": "https://github.com/JMiller1181/RPS#readme",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
